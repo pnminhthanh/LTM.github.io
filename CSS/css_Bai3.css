@@ -1,0 +1,105 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* needed for container min-height */
+    background: #E6E8E6;
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+.form {
+    padding: 10px;
+    width: 1000px;
+    height: 100vh;
+    margin-top: 50px;
+    margin: auto;
+    background: #ffffff;
+    float: left;
+}
+
+.row {
+    height: 50px;
+}
+
+label {
+    float: left;
+    margin: 10px;
+    padding: 12px 0px 12px 10px;
+    margin: 8px 0;
+    font-weight: bold;
+    width: 20%;
+}
+label span {
+    font-size: 12px;
+    color: #666;
+    display: block;
+    font-weight: normal;
+
+}
+
+.col-sm-9 {
+    width: 75%;
+    margin: 10px 100px;
+}
+
+.form .form-control {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0px 8px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.order-form .order-btn {
+    position: inherit;
+    float: right;
+    margin: 50px;
+    height: 40px;
+    width: 30%;
+    border: none;
+    color: white;
+    background: brown;
+    font-weight: bold;
+    font-size: large;
+}
+.payment {
+    width: 22%;
+    margin-left: 10px;
+    background: #ffffff;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+.payment .coupon{
+    background: lightgrey;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-control-coupon {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0px 8px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.payment .sm-btn{
+    height: 40px;
+    width: 30%;
+    border: none;
+    color: white;
+    background: blue;
+    font-weight: bold;
+}
+.payment #result {
+    font-size: medium;
+    font-weight: bold;
+    color: crimson;
+    margin: auto;
+    text-align: center;
+}

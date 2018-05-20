@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link href="CSS/css_Bai3.css" rel="stylesheet" />
+	<title></title>
+</head>
+<body>
+	<script>
+		function IsMSSV(ma) {
+			var str = ma;
+			if (str[0] == 3 && str[1] == 1 && str[2] == 1 && str.length == 11) {
+				document.getElementById('result').innerHTML = "Bạn được giảm 5%";
+			}
+			else {
+				document.getElementById('result').innerHTML = "Mã không tồn tại!";
+			}
+		}
+	</script>
+	<div class="form">
+		<form class="order-form">
+			<div class="row">
+				<label class="col-sm-3">Họ và Tên:</label>
+				<div class="col-sm-9">
+					<input id="fullName" name="fullName" class="form-control" required placeholder="Vui lòng nhập Họ và tên" type="text" value="" maxlength="50">
+				</div>
+			</div>
+			<div class="row">
+				<label class="col-sm-3">Điện Thoại:</label>
+				<div class="col-sm-9">
+					<input id="fullName" name="fullName" class="form-control" required placeholder="Ví dụ: 0946046777" type="text" value="" maxlength="50">
+				</div>
+			</div>
+			<div class="row">
+				<label class="col-sm-3">Email: <br /><span>(Không bắt buộc)</span></label>
+				<div class="col-sm-9">
+					<input id="fullName" name="fullName" class="form-control" placeholder="support@www.adayroi.com" type="email" value="" maxlength="50">
+				</div>
+			</div>
+			<br /> <br />
+			<div class="row">
+				<label class="col-sm-3">Tỉnh/thành phố:</label>
+				<div class="col-sm-9">
+					<select id="country" name="country" class="form-control" required>
+						<option value="HoChiMinh">Hồ Chí Minh</option>
+						<option value="HaNoi">Hà Nội</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<label class="col-sm-3">Tên đường phố:</label>
+				<div class="col-sm-9">
+					<input id="fullName" name="fullName" class="form-control" required placeholder="Ví dụ: Đường CMT8, phường 13, Quận 10" type="text" value="" maxlength="50">
+				</div>
+			</div>
+			<div class="row">
+				<label class="col-sm-3">Địa chỉ chi tiết:</label>
+				<div class="col-sm-9">
+					<input id="fullName" name="fullName" class="form-control" required placeholder="Ví dụ: số 10, Ngõ 50, Ngách 100, Hẻm 22" type="text" value="" maxlength="50">
+				</div>
+			</div>
+			<div class="row">
+				<label class="col-sm-3">
+					Lời nhắn:			<br /><span>(Không bắt buộc)</span>
+				</label>
+				<div class="col-sm-9">
+					<textarea id="fullName" name="fullName" class="form-control" placeholder="Ví dụ: Chuyển hàng ngoài giờ hành chính" value=""></textarea>
+				</div>
+			</div>
+			<input class="order-btn" type="submit" value="Xác nhận đơn hàng"/>
+		</form>
+	</div>
+	<div class="payment">
+		<div class="coupon">Sử dụng mã giảm giá</div>
+		<div class="coupon-input">
+			<input type="text" class="form-control-coupon" placeholder="Nhập mã giảm giá" maxlength="11" />
+			<input type="submit" class="sm-btn" value="Áp dụng" onclick="IsMSSV(document.getElementsByClassName('form-control-coupon')[0].value)" />
+		</div>
+		<p id="result"></p>
+	</div>
+
+</body>
+</html>
